@@ -1,0 +1,21 @@
+.container_main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 50px 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .container_cards {
+        grid-template-columns: 1fr;
+    }
+}
