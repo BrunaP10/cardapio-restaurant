@@ -2,6 +2,11 @@
 
 Projeto desenvolvido com foco em simular um cardápio digital moderno, acessado via QR Code, como utilizado em restaurantes.
 
+📌 Sobre o projeto
+
+Este projeto foi desenvolvido como parte de um curso de desenvolvimento web, com o objetivo de praticar conceitos de React, Next.js, componentização, organização de pastas e deploy na Vercel.
+O layout e a estrutura foram personalizados e evoluídos além da proposta inicial do curso.
+
 ---
 
 ## 🚀 Acesse o projeto online
