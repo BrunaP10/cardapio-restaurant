@@ -1,7 +1,7 @@
 import Image from "next/image";
 import estilos from "./Categorias.module.css";
 
-type Props = {
+type CategoriasProps = {
   categoria: string;
   setCategoria: (categoria: string) => void;
 };
@@ -16,7 +16,7 @@ const listaCategorias = [
   { nome: "Sobremesas", imagem: "/sobremesa.png" }
 ];
 
-export default function Categorias({ categoria, setCategoria }: Props) {
+export default function Categorias({ categoria, setCategoria }: CategoriasProps) {
   return (
     <div className={estilos.container}>
       {listaCategorias.map((item) => {
@@ -31,7 +31,7 @@ export default function Categorias({ categoria, setCategoria }: Props) {
           >
             <Image
               src={item.imagem}
-              alt={`Ícone da categoria ${item.nome}`}
+              alt=""
               width={20}
               height={20}
             />
