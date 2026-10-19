@@ -17,20 +17,25 @@ export default function Home() {
   return (
     <>
       <Banner />
-      <main className={estilos.container_main}>      
-        <Categorias categoria={categoria} setCategoria={setCategoria} />
-        <CampoDeBusca busca={busca} setBusca={setBusca} />
+      
+      <main className={estilos.container_main}>
+        <Categorias
+          categoria={categoria}
+          setCategoria={setCategoria}
+        />
+
+        <CampoDeBusca
+          busca={busca}
+          setBusca={setBusca}
+        />
 
         <div className={estilos.container_cards}>
           {produtosFiltrados.map((produto) => (
-            <Card
-              key={produto.id}
-              produto={produto}
-            />
+          <Card key={produto.id} produto={produto} />
           ))}
         </div>
-
       </main>
+
     </>
   );
 }
