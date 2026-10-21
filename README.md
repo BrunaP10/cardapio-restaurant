@@ -6,7 +6,8 @@ O projeto foi desenvolvido inicialmente como parte de um curso de desenvolviment
 
 ## 🚀 Demonstração
 
-**Acesse o projeto online:**  
+**Acesse o projeto online:**
+
 https://cardapio-restaurant-six.vercel.app/
 
 ## 📱 Acesso por QR Code
@@ -25,7 +26,6 @@ Escaneie o QR Code abaixo para acessar o cardápio pelo celular.
 - 💾 Persistência da preferência de tema utilizando `localStorage`.
 - 🎨 Identidade visual personalizada com paleta de cores consistente.
 - 🍽️ Banner de apresentação e rodapé temático.
-- 🚀 Deploy na Vercel.
 
 ## 🛠️ Tecnologias utilizadas
 
@@ -44,7 +44,7 @@ O projeto utiliza a estrutura do App Router do Next.js, com componentes reutiliz
 - `app/componentes/` — componentes reutilizáveis da interface.
 - `app/data/` — dados dos produtos.
 - `app/servico/` — lógica de filtragem dos produtos.
-- `public/` — imagens e arquivos estáticos.
+- `public/` — imagens e arquivos estáticos, incluindo o QR Code.
 
 ## 💻 Como executar localmente
 
@@ -106,4 +106,3 @@ O projeto também faz parte da evolução do meu portfólio de desenvolvimento f
 ---
 
 Projeto desenvolvido para fins de aprendizado e portfólio.
-

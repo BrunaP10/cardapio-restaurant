@@ -1,23 +1,26 @@
 .container_card {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: var(--cor-superficie, #FFFFFF);
+  color: var(--cor-texto, #573A28);
 
   border-radius: 12px;
-  border: 1px solid #d4a017;
+  border: 1px solid var(--cor-borda, #E9D8C4);
 
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.3s ease;
 
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
 }
 
-
 .container_card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .imagem_container {
@@ -31,7 +34,6 @@
   object-fit: cover;
   object-position: center;
 }
-
 
 .info {
   padding: 16px;
@@ -49,14 +51,14 @@
 
 .categoria {
   font-size: 13px;
-  color: #b8890b;
+  color: var(--cor-destaque, #70462A);
   font-weight: 700;
 }
 
 .descricao {
   font-size: 14px;
   line-height: 1.5;
-  color: #555;
+  color: var(--cor-texto-secundario, #705D4F);
 }
 
 .preco {

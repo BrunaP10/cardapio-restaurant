@@ -15,8 +15,8 @@
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.45),
-    rgba(0, 0, 0, 0.58)
+    rgba(0, 0, 0, 0.20),
+    rgba(0, 0, 0, 0.38)
   );
 }
 
@@ -32,12 +32,11 @@
   padding: 0 24px;
 
   text-align: center;
-  color: #e5c77d;
+  color: #D99A62;
 }
 
 .titulo {
   margin: 0 0 18px;
-
   font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(36px, 4vw, 56px);
   font-weight: 700;
@@ -45,7 +44,7 @@
   letter-spacing: 3px;
   text-transform: uppercase;
 
-  color: #f8f1e5;
+  color: #FAF5ED;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
@@ -54,17 +53,44 @@
   margin: 0 auto;
 
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(19px, 2vw, 25px);
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   line-height: 1.6;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.7px;
 
-  color: #e5c77d;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  color: #E9D8C4;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+
+  animation: aparecerSubtitulo 1s ease-out both;
 }
 
-/* MOBILE */
+@keyframes aparecerSubtitulo {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .paragrafo {
+    animation: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .paragrafo {
+    max-width: 320px;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+}
+
 @media (max-width: 600px) {
   .banner {
     height: 260px;
