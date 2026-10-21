@@ -43,7 +43,7 @@ O projeto utiliza a estrutura do App Router do Next.js, com componentes reutiliz
 - `app/` — páginas e estrutura principal da aplicação.
 - `app/componentes/` — componentes reutilizáveis da interface.
 - `app/data/` — dados dos produtos.
-- `app/servico/` — lógica de filtragem dos produtos, conforme a organização atual do projeto.
+- `app/servico/` — lógica de filtragem dos produtos.
 - `public/` — imagens e arquivos estáticos.
 
 ## 💻 Como executar localmente
